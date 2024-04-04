@@ -17,4 +17,5 @@ export default class User extends BaseEntity{
     
     @OneToMany(() => Token, token => token.user)
     tokens!: Token[]
+    tasks: any
 }
